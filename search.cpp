@@ -45,7 +45,6 @@ public:
 
         while(element >=array[low] && element <= array[high] && low <= high){
             probe = low + (high-low) * (element-array[low]) / (array[high]-array[low]);
-            cout << "probe: " << probe << endl;
             if(element == array[probe])
                 return probe;
             else if (element < array[probe])
