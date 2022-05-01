@@ -2,10 +2,8 @@
 
 using namespace std;
 
-class Search{
+struct Search{
 
-public:
-    
     // Best Case Time Complexity: O(1)
     // Worst Case Time Complexity: O(n)
     int Linear(int* array, int element, size_t size){
@@ -19,6 +17,7 @@ public:
         return -1;
     }
 
+    // Best Case Time Complexity: O(1)
     // Average Case Time Complexity: O(log(n))
     // Worst Case Time Complexity: O(n)
     int Binary(int* array, int element, size_t size){
@@ -37,6 +36,7 @@ public:
         return -1;
     }
 
+    // Best Case Time Complexity: O(1)
     // Average Case Time Complexity: O(log(log(n)))
     // Worst Case Time Complexity: O(n) [values increase exponentially] 
     int Interpolation(int* array, int element, size_t size) {
